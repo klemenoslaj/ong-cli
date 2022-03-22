@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.workingDirectories": [
+    {
+      "changeProcessCWD": true,
+      "directory": "packages/demo"
+    }
+  ]
+}

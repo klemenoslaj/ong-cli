@@ -1,0 +1,34 @@
+# Outputs
+packages/**/*.js
+packages/**/*.js.map
+packages/**/*.d.ts
+packages/**/*.tgz
+!**/schema.d.ts
+!**/*.template
+dist
+*.tgz
+
+# IDEs
+.idea/
+*.iml
+jsconfig.json
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Misc
+node_modules/
+npm-debug.log*
+yarn-error.log*
+coverage
+.nyc_output
+packages/**/node_modules
+
+# Mac OSX Finder files.
+**/.DS_Store
+.DS_Store
+temp

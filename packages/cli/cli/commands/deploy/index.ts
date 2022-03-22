@@ -1,0 +1,1 @@
+export { deployEveryLibrary } from './deploy';

@@ -1,0 +1,10 @@
+.editorconfig
+.gitignore
+.npmrc
+.yarnrc
+README.md
+yarn.lock
+**/*.template
+packages/**/*.d.ts
+!packages/**/schema.d.ts
+**/.angular

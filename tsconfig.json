@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "rootDir": "./packages",
+    "lib": ["ES2019"],
+    "baseUrl": ".",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "importHelpers": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "ES2019",
+    "types": ["jasmine", "node"],
+    "removeComments": true
+  },
+  "include": ["packages/**/*"]
+}

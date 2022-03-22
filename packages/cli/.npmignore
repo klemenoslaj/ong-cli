@@ -1,0 +1,17 @@
+# Base from ignoring all the files
+*
+
+# Pack all JS files except specs
+!*.js
+*_spec.js
+
+# Pack all definition files except specs
+!*.d.ts
+*_spec.d.ts
+
+# Pack JSON files
+!*.json
+# Pack all the templates
+!**/*.template
+# Pack all the contents of bin folder
+!bin/**/*

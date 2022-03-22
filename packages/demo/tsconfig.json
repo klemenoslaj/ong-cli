@@ -1,0 +1,42 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "lib": ["es2020", "dom"],
+    "paths": {
+      "@scope/demo": ["dist/scope/demo/scope-demo", "dist/scope/demo"],
+      "@scope/demo2": ["dist/scope/demo2/scope-demo2", "dist/scope/demo2"],
+      "@scope/demo3": ["dist/scope/demo3/scope-demo3", "dist/scope/demo3"],
+      "components": ["dist/components/components", "dist/components"],
+      "core": ["dist/core/core", "dist/core"],
+      "feature1": ["dist/feature1/feature1", "dist/feature1"],
+      "feature2": ["dist/feature2/feature2", "dist/feature2"],
+      "feature3": ["dist/feature3/feature3", "dist/feature3"],
+      "feature4": ["dist/feature4/feature4", "dist/feature4"],
+      "feature5": ["dist/feature5/feature5", "dist/feature5"],
+      "shared": ["dist/shared/shared", "dist/shared"]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
