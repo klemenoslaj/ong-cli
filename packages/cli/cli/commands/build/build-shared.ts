@@ -4,8 +4,8 @@ import parser from 'yargs-parser';
 import { coerceParallel, prepareArgsForParsing, question } from '../../shared';
 
 export const enum BuildMode {
-  Production = '--prod',
-  Development = '--no-prod',
+  Production = '--configuration production',
+  Development = '--configuration development',
 }
 
 export interface ProductionAnswer {

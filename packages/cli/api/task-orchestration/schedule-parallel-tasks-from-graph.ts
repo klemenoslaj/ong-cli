@@ -97,7 +97,9 @@ export async function scheduleParallelTasksFromGraph<T extends readonly string[]
   }
 
   async function execute(project: string) {
-    const args = threadArgs(project);
+    const args = threadArgs(project)
+      .map((arg) => arg.split(' '))
+      .flat(1);
     const command = `ng ${args.join(' ')}`;
 
     return threads

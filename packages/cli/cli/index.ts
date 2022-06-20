@@ -29,6 +29,8 @@ import {
   lintAffected,
 } from './commands';
 
+process.env.BAZEL_TARGET = '1';
+
 const fullArgv = process.argv.slice(2);
 const [commandName, ...argv] = <[keyof typeof commands, ...(readonly string[])]>fullArgv;
 const commands: Record<Commands, AnyCommand> = {

@@ -22,7 +22,9 @@ import { appRootPath, workspace } from './workspace';
 // TODO: Use `ng deploy`
 export async function deployLibraries(parallel: number, verbose: boolean, dryRun: boolean) {
   const projects = workspace.find.projectNames.byType.sync([ProjectType.Library]);
-  return buildProjects(projects, ['--prod'], parallel, verbose).then(() => publishOrPackLibraries(dryRun));
+  return buildProjects(projects, ['--configuration', 'production'], parallel, verbose).then(() =>
+    publishOrPackLibraries(dryRun),
+  );
 }
 
 async function publishOrPackLibraries(dryRun: boolean) {
